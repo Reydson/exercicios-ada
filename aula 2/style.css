@@ -1,0 +1,55 @@
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: solid 2px #aaa;
+}
+
+h1, h2 {
+    margin-bottom: 0;
+}
+
+thead td, th {
+    font-weight: bold;
+}
+
+.bd-mae {
+    background-color: #c954b9;
+    color: white;
+}
+
+.txt-mae {
+    color: #c954b9;
+}
+
+.bd-pai{
+    background-color: #23a4ef;
+    color: white;
+}
+
+.txt-pai{
+    color: #23a4ef;
+}
+
+.bd-filho{
+    background-color: #27d736;
+    color: white;
+}
+
+.txt-filho{
+    color: #27d736;
+}
+
+.bd-filha{
+    background-color: #E54724;
+    color: white;
+}
+
+.txt-filha{
+    color: #E54724;
+}
+
+.legenda-cor {
+    width: 50px;
+}
