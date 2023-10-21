@@ -1,0 +1,451 @@
+@import url('https://fonts.cdnfonts.com/css/hambu-radul');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    background: #FDEBDB;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cta {
+    background: #FAC4D2;
+    padding: 13px 59px;
+    border: none;
+    border-radius: 10px;
+    font-size: 35px;
+    color: #000;
+    cursor: pointer;
+}
+
+.cta:hover {
+    color: #000;
+    transform: scale(1.01);
+}
+
+.titulo {
+    font-family: 'Hambu Radul', sans-serif;
+    font-size: 42px;
+    color: #582406;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px #0000007f
+}
+
+header .logo {
+    text-decoration: none;
+}
+
+header .logo img {
+    float: left;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+header .logo h1 {
+    font-family: 'Hambu Radul', sans-serif;
+    color: #582406;
+    font-size: 40px;
+    margin-left: 10px;
+    float: left;
+    margin-top: 52px;
+}
+
+header nav {
+    float: right;
+    margin-top: 54px;
+}
+
+header nav a {
+    font-family: 'Hambu Radul', sans-serif;
+    font-size: 24px;
+    display: inline-block;
+    color: #582406;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+header nav a:hover {
+    color: #000;
+    transform: scale(1.04);
+}
+
+header nav li {
+    display: inline-block;
+}
+
+main .banner {
+    background: url(assets/images/fundo-slide.png) no-repeat;
+    background-size: cover;
+    padding: 170px 0;
+}
+
+main .banner p {
+    color: #FFF;
+    font-size: 60px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+main .produtos {
+    padding-top: 50px;
+    padding-bottom: 55px;
+}
+
+main .produtos aside {
+    padding: 17px;
+}
+
+main .produtos aside h3 {
+    font-family: 'Hambu Radul', sans-serif;
+    font-size: 40px;
+    color: #582406;
+    margin-bottom: 20px;
+}
+
+main .produtos aside a {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #582406;
+}
+
+main .produtos aside a:last-of-type {
+    margin-bottom: 0;
+}
+
+main .produtos aside a:hover {
+    color: #000;
+    transform: scale(1.01);
+}
+
+main .produtos article  {
+    margin-bottom: 20px;
+}
+
+main .produtos article:hover {
+    transform: scale(1.01);
+}
+
+main .produtos article a {
+    text-decoration: none;
+}
+
+main .produtos article img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+main .produtos article figcaption {
+    color: #582406;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin: 10px;
+}
+
+main .produtos article span {
+    color: #000;
+    font-size: 22px;
+    display: block;
+    margin: 10px;
+}
+
+main .sobre {
+    background: url(assets/images/fundo-sobre.png) no-repeat;
+    background-size: cover;
+    padding: 117px 0;
+}
+
+main .sobre .card {
+    padding: 50px 50px 50px 50px;
+}
+
+main .sobre .card .titulo {
+    margin-bottom: 10px;
+}
+
+main .sobre .card p{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #582406;
+}
+
+main .sobre .card p:last-of-type {
+    margin-bottom: 0;
+}
+
+main .eventos {
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
+
+main .eventos article img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+main .eventos article .descricao {
+    padding: 15px;
+}
+
+main .eventos article figcaption {
+    color: #582406;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0 0 15px;
+}
+
+main .eventos article .clearfix {
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+main .eventos article .data {
+    float: left;
+    font-size: 18px;
+}
+
+main .eventos article .preco {
+    float: right;
+    font-size: 18px;
+}
+
+main .eventos article p {
+    color: #582406;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+main .eventos article .cta {
+    width: 100%;
+}
+
+footer {
+    background: #582406;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+footer .logo {
+    text-align: center;
+    text-decoration: none;
+}
+
+footer .logo p {
+    margin-top: 20px;
+    font-size: 60px;
+    color: #FFF;
+    font-family: 'Hambu Radul', sans-serif;
+}
+
+footer nav {
+    font-size: 24px;
+    font-family: 'Hambu Radul', sans-serif;
+    margin-top: 15px;
+}
+
+footer nav a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 12px 20px;
+    display: inline-block;
+}
+
+footer nav a:hover {
+    transform: scale(1.04);
+}
+
+footer .endereco {
+    margin-top: 30px;
+}
+
+footer .endereco h5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+    margin-bottom: 14px;
+}
+
+footer .endereco p {
+    font-size: 20px;
+    color: #FFF;
+    margin-bottom: 14px;
+}
+
+footer .endereco .cta {
+    font-size: 30px;
+    padding: 5px 35px;
+}
+
+footer .copy {
+    font-size: 16px;
+    display: block;
+    text-align: end;
+    color: #FFF;
+}
+
+footer .copy a {
+    color: #FAC4D2;
+    text-decoration: none;
+}
+
+footer .copy a:hover {
+    text-decoration: underline;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #000000dd;
+    display: none;
+}
+
+.modal-aberta .modal {
+    display: block;
+}
+
+body.modal-aberta {
+    overflow: hidden
+}
+
+.modal-content {
+    background: #FDEBDB;
+    width: 680px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 60px;
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+}
+
+.modal-content .fecha {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    color: #FFF;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    font-size: 30px;
+    color: #582406;
+    margin-bottom: 15px;
+}
+
+.modal-content .clearfix {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.modal-content .data {
+    float: left;
+}
+
+.modal-content .preco {
+    float: right;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 5px;
+    color: #582406;
+}
+
+.modal-content input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.modal-content .cta {
+    width: 100%;
+}
+
+/* Interna de produto */
+.pagina-produto .banner {
+    padding: 80px;
+    background: url(assets/images/fundo-banner-produto.png) no-repeat;
+    background-size: cover;
+}
+
+.pagina-produto .banner h1 {
+    text-align: center;
+    color: #FFF;
+    font-size: 70px;
+}
+
+.pagina-produto .produto {
+    padding-top: 40px;
+}
+
+.pagina-produto .produto img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.pagina-produto .produto .card {
+    padding: 20px;   
+}
+
+.pagina-produto .produto span {
+    font-size: 30px
+}
+
+.pagina-produto .produto p {
+    font-size: 22px;
+    color: #582406;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.pagina-produto .produto table,
+.pagina-produto .produto th,
+.pagina-produto .produto td {
+    border: 1px solid #582406;
+    border-collapse: collapse;
+}
+
+.pagina-produto .produto th {
+    font-family: 'Hambu Radul', sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    color: #582406;
+}
+
+.pagina-produto .produto td {
+    padding: 5px 10px;
+    color: #582406;
+}
+
+.pagina-produto .produtos {
+    background-color: #FAC4D2;
+    padding-top: 30px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
