@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const peso = +prompt('Informe seu peso em Kg');
+        const altura = +prompt('Informe sua altura em metros').replace(',', '.');
+        const imc = (peso / (altura * altura)).toFixed(2);
+
+        if(imc < 18.5) {
+            alert(`Abaixo do peso (${imc})`);
+        } else {
+            if(imc < 24.9) {
+                alert(`Peso normal (${imc})`);
+            } else {
+                if(imc < 29.9) {
+                    alert(`Sobrepeso (${imc})`);
+                } else {
+                    alert(`Obesidade (${imc})`);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
