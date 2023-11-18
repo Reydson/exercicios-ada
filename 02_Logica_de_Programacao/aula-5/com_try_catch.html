@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        try {
+            const peso = prompt('Informe seu peso em Kg').replace(',', '.');
+            if(isNaN(peso) || peso == null) {
+                throw new Error('Peso inválido');
+            }
+            if(peso == 0) {
+                throw new Error('Peso zerado');
+            }
+            const altura = prompt('Informe sua altura em metros').replace(',', '.');
+            if(isNaN(altura) || altura == null) {
+                throw new Error('Altura inválida');
+            }
+            if(altura == 0) {
+                throw new Error('Altura zerada');
+            }
+            const imc = (Number(peso) / Number(altura) ** 2).toFixed(2);
+
+            if(imc < 18.5) {
+                alert(`Abaixo do peso (${imc})`);
+            } else {
+                if(imc < 24.9) {
+                    alert(`Peso normal (${imc})`);
+                } else {
+                    if(imc < 29.9) {
+                        alert(`Sobrepeso (${imc})`);
+                    } else {
+                        alert(`Obesidade (${imc})`);
+                    }
+                }
+            }
+        } catch(error) {
+            alert(`Ocorreu um erro: ${error.message}`)
+        }
+    </script>
+</body>
+
+</html>
