@@ -1,0 +1,58 @@
+#botoes.deletado #mostrarDeletadosBtn {
+    display: none;
+}
+
+#botoes:not(.deletado) #ocultarDeletadosBtn {
+    display: none;
+}
+
+#botoes:not(.categoria) #sairCategoriaBtn {
+    display: none;
+}
+
+.modelo {
+    display: none;
+}
+
+#lista-tarefas .tarefa .id {
+    color: red;
+}
+
+#lista-tarefas .tarefa .badge {
+    cursor: pointer;
+}
+
+#lista-tarefas .tarefa button i {
+    pointer-events: none;
+}
+
+#lista-tarefas .tarefa.deletado {
+    background-color: #df6b6b;
+    position: relative;
+}
+
+#lista-tarefas .tarefa.deletado .id {
+    color: #fff;
+}
+
+#lista-tarefas .tarefa .icone-lixeira {
+    display: none;
+}
+
+#lista-tarefas .tarefa.deletado .icone-lixeira {
+    display: block;
+    color: #ffffff93;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 45px;
+}
+
+#lista-tarefas .tarefa.deletado button[data-acao="editar"],
+#lista-tarefas .tarefa.deletado button[data-acao="deletar"] {
+    display: none;
+}
+
+#lista-tarefas .tarefa:not(.deletado) button[data-acao="restaurar"] {
+    display: none;
+}
