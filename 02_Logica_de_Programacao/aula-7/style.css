@@ -6,6 +6,14 @@
     display: none;
 }
 
+#botoes.vencido #mostrarVencidosBtn {
+    display: none;
+}
+
+#botoes:not(.vencido) #ocultarVencidosBtn {
+    display: none;
+}
+
 #botoes:not(.categoria) #sairCategoriaBtn {
     display: none;
 }
@@ -18,7 +26,7 @@
     color: red;
 }
 
-#lista-tarefas .tarefa .badge {
+#lista-tarefas .tarefa .badge.categoria {
     cursor: pointer;
 }
 

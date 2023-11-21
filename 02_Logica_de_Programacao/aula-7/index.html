@@ -17,6 +17,10 @@
             <button type="button" class="btn btn-primary my-1" id="adicionarTarefaBtn"><i class="fal fa-plus"></i> Adicionar tarefa</button>
             <button type="button" class="btn btn-danger my-1" id="mostrarDeletadosBtn"><i class="fal fa-trash-alt"></i> Mostrar deletados</button>
             <button type="button" class="btn btn-danger my-1" id="ocultarDeletadosBtn"><i class="fal fa-trash-alt"></i> Ocultar deletados</button>
+            <button type="button" class="btn btn-warning my-1" id="mostrarVencidosBtn"><i class="fal fa-clock"></i> Mostrar apenas vencidos</button>
+            <button type="button" class="btn btn-warning my-1" id="ocultarVencidosBtn"><i class="fal fa-clock"></i> Ocultar não vencidos</button>
+            <button type="button" class="btn btn-secondary my-1" id="mostarContadoresBtn"><i class="fas fa-list"></i> Mostrar contadores</button>
+            <button type="button" class="btn btn-danger my-1" id="resetarFiltrosBtn"><i class="fas fa-times-octagon"></i> Resetar filtros</button>
             <button type="button" class="btn btn-info my-1" id="sairCategoriaBtn"><i class="fas fa-portal-exit"></i> Sair da categoria</button>
             <div class="input-group my-1">
                 <input type="number" class="form-control" id="pesquisaInput" placeholder="Pesquisar por id">
@@ -28,7 +32,10 @@
             <div class=" col-md-6 col-xl-4 mt-5 py-2 tarefa modelo">
                 <h2><span class="id">#1</span> <span class="titulo">Título da tarefa</span></h2>
                 <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et obcaecati minus itaque reprehenderit dolores quasi, quia totam vitae fugit repudiandae.</p>
-                <span class="badge bg-primary mb-4 py-2 d-block categoria" data-acao="listar-categoria">Categoria</span>
+                <span class="badge bg-primary mb-1 py-2 d-block categoria" data-acao="listar-categoria">Categoria</span>
+                <span class="badge bg-warning mb-1 py-2 d-block d-none"><i class="fal fa-clock"></i> <span class="vencimento">Vencimento</span></span>
+                <span class="badge bg-danger mb-1 py-2 d-block d-none vencido">Vencido</span>
+                <span class="badge bg-success mb-4 py-2 d-block d-none naoVencido">Não vencido</span>
                 <button type="button" class="btn btn-info btn-lg" data-acao="editar">
                     <i class="far fa-edit"></i>
                 </button>
@@ -64,6 +71,10 @@
                         <div class="mb-2">
                             <label for="categoria" class="form-label">Categoria</label>
                             <input type="text" class="form-control" name="categoria" id="categoria">
+                        </div>
+                        <div class="mb-2">
+                            <label for="descricao" class="form-label">Vencimento*</label>
+                            <input type="datetime-local" class="form-control" name="vencimento" id="vencimento">
                         </div>
                     </form>
                 </div>
