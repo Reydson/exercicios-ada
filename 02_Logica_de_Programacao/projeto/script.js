@@ -2,8 +2,8 @@ let tarefas = [
     {id: 1, titulo: 'Testar aplicação', descricao: 'Realizar o teste da aplicação', categoria: 'Teste', deletado: false, vencimento: '2023-11-10T10:10:10'},
     {id: 2, titulo: 'Atualizar aplicação', descricao: 'Realizar a atualização da aplicação', categoria: 'Atualização', deletado: true, vencimento: '2024-11-10T11:11:11'},
     {id: 3, titulo: 'Testar rede', descricao: 'Realizar o teste da rede', categoria: 'Teste', deletado: false, vencimento: '2024-11-10T12:12:12'},
-    {id: 3, titulo: 'Teste geral', descricao: 'Realizar o teste geral', categoria: 'Teste', deletado: false, vencimento: ''},
-    {id: 4, titulo: 'Atualizar computador', descricao: 'Realizar a atualização do computador', categoria: 'Atualização', deletado: false, vencimento: '2024-11-10T13:13:13'}
+    {id: 4, titulo: 'Teste geral', descricao: 'Realizar o teste geral', categoria: 'Teste', deletado: false, vencimento: ''},
+    {id: 5, titulo: 'Atualizar computador', descricao: 'Realizar a atualização do computador', categoria: 'Atualização', deletado: false, vencimento: '2024-11-10T13:13:13'}
 ];
 
 let filtros = {
