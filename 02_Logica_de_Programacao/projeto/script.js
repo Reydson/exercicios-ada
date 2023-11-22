@@ -104,7 +104,6 @@ function imprimeListaTarefas() {
                 }
             }
             
-            
             const catClone = clone.querySelector('.categoria');
             if(tarefa.categoria) {
                 catClone.innerHTML = tarefa.categoria;
