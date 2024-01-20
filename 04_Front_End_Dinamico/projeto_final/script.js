@@ -17,9 +17,7 @@ const windSpeed = document.querySelector("#wind_speed");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${inputCidade.value}&units=metric&lang=pt_br&appid=${key}`
-  )
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputCidade.value}&units=metric&lang=pt_br&appid=${key}`)
     .then((response) => response.json())
     .then((json) => {
       nameCity.innerHTML = json.name
