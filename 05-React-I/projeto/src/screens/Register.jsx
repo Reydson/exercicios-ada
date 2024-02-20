@@ -2,7 +2,7 @@ import Header from "../components/Header"
 import { Container, Row, Col } from 'react-bootstrap';
 import RegisterForm from '../components/RegisterForm';
 import { GlobalContext } from '../components/GlobalStorage';
-import { USER_LOGIN } from '../api';
+import { USER_REGISTER } from '../api';
 import { useContext, useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import Loading from '../components/Loading/index';
@@ -22,11 +22,17 @@ const Register = () => {
     }
   }, [user, navigate]);
 
-  async function handleLogin(email, password) {
+  async function handleRegister(name, image, email, dateOfBirth, state, country, password) {
     setError("");
-    const { url, options } = USER_LOGIN({
+    const { url, options } = USER_REGISTER({
+      name,
+      image,
       email,
-      password
+      dateOfBirth,
+      state,
+      country,
+      password,
+      admin: false
     });
     try {
       setLoading(true);
@@ -54,7 +60,7 @@ const Register = () => {
               <img src={logo} className="my-5" alt="Best Browser Games" />
             </div>
             {error && <ErrorMessage message={error} />}
-            <RegisterForm onLogin={handleLogin} />
+            <RegisterForm onRegister={handleRegister} />
           </Col>
         </Row>
       </Container>

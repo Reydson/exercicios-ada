@@ -14,6 +14,20 @@ export function USER_LOGIN(body) {
   };
 }
 
+// Faz o registro do usuário
+export function USER_REGISTER(body) {
+  return {
+    url: API_URL + "/register",
+    options: {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(body),
+    },
+  };
+}
+
 // Busca os jogos
 export function GET_GAMES(pageSize, page, searchTerm, genre) {
   return {

@@ -3,8 +3,9 @@ import { useState } from "react";
 import { PropTypes } from 'prop-types';
 import { Link } from 'react-router-dom';
 
-const RegisterForm = ({ onSubmit }) => {
+const RegisterForm = ({ onRegister }) => {
   const [name, setName] = useState('');
+  const [image, setImage] = useState('');
   const [email, setEmail] = useState('');
   const [dateOfBirth, setDateOfBirth] = useState('');
   const [state, setState] = useState('');
@@ -13,7 +14,7 @@ const RegisterForm = ({ onSubmit }) => {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    onSubmit(name, email, dateOfBirth, state, country, password);
+    onRegister(name, image, email, dateOfBirth, state, country, password);
   }
 
   return (
@@ -22,6 +23,11 @@ const RegisterForm = ({ onSubmit }) => {
         <Form.Group className="mb-3">
           <Form.Label>Nome</Form.Label>
           <Form.Control type="text" value={name} onChange={({ target }) => setName(target.value)} required />
+        </Form.Group>
+
+        <Form.Group className="mb-3">
+          <Form.Label>URL da imagem</Form.Label>
+          <Form.Control type="text" value={image} onChange={({ target }) => setImage(target.value)} required />
         </Form.Group>
 
         <Form.Group className="mb-3">
@@ -53,7 +59,7 @@ const RegisterForm = ({ onSubmit }) => {
           Já possui uma conta? Faça login clicando <Link to="/login">aqui</Link>
         </div>
         <Button variant="custom-bg" type="submit">
-          Entrar
+          Registrar
         </Button>
       </Form>
     </>
@@ -61,7 +67,7 @@ const RegisterForm = ({ onSubmit }) => {
 }
 
 RegisterForm.propTypes = {
-  onSubmit: PropTypes.func
+  onRegister: PropTypes.func
 }
 
 export default RegisterForm
