@@ -1,0 +1,15 @@
+.btn-custom-bg {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #5809E0;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #8C2CE2;
+}
+
+.active>.page-link, .page-link.active {
+  background-color: #5809E0;
+  border-color: #5809E0;
+}
+
+.page-link {
+  color: #5809E0;
+}

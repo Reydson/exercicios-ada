@@ -1,0 +1,9 @@
+.label {
+  display: inline-block;
+}
+
+.select {
+  display: inline-block;
+  width: auto;
+  margin-left: 5px;
+}
