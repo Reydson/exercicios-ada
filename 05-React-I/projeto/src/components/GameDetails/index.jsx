@@ -1,10 +1,11 @@
-import { Col, Row } from 'react-bootstrap'
+import { Button, Col, Row } from 'react-bootstrap'
 import PropTypes from 'prop-types'
 import styles from './styles.module.css'
 import Rating from 'react-rating'
 import emptySymbol from './../../assets/images/star-empty.png'
 import fullSymbol from './../../assets/images/star-full.png'
 import Review from '../Review'
+import { Link } from 'react-router-dom'
 
 
 const GameDetails = ({ title, reviews, thumbnail, short_description, genre, platform, release_date }) => {
@@ -32,11 +33,17 @@ const GameDetails = ({ title, reviews, thumbnail, short_description, genre, plat
           <p><b>Gênero:</b> {genre}</p>
           <p><b>Plataforma:</b> {platform}</p>
           <p><b>Data de lançamento:</b> {new Date(release_date).toLocaleDateString()}</p>
+          <Link to={-1}>
+            <Button variant="custom-bg" className={styles.button}>Voltar</Button>
+          </Link>
         </Col>
         </Row>
         <h2 className='mt-4'>Reviews:</h2>
         <Row>
-        {reviews && reviews.map(review => <Col lg="6" key={review.id}><Review {...review} /></Col>)}
+        {reviews && reviews.length ?
+          reviews.map(review => <Col lg="6" key={review.id}><Review {...review} /></Col>) :
+          <p>Nenhum review encontrado</p>
+        }
       </Row>
     </div>
   )
