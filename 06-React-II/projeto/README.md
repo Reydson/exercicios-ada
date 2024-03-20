@@ -1,30 +1,21 @@
-# React + TypeScript + Vite
+# Projeto final de Framework de Front End II (REACT)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Como executar o código:
+1. Clonar este repositório em seu computador;
+2. Instalar as dependências necessárias com o comando  `npm install`;
+3. Executar o json-server-auth com o comando `npm run json-server` em um primeiro terminal;
+4. Executar o projeto com o comando `npm run dev` em um segundo terminal;
 
-Currently, two official plugins are available:
+## O desafio:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Crie um ecommerce de qualquer tipo utilizando os conceitos aprendidos até aqui.
+Não precisa se preocupar com backend, utilize o json-server para isso.
 
-## Expanding the ESLint configuration
+O ecomm deverá ter:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+* 1 tela de listagem de produtos. Não obrigatório mas se tiver filtros vai ser bem legal. Não é obrigatório também ter paginação;
+* 1 tela de detalhes do produto;
+* 1 tela de login do usuário (pode usar o mesmo código que fizemos em aula);
+* 1 tela de carrinho de compra onde não poderá finalizar a compra antes de fazer o login.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+CSS não é o nosso foco, mas faça uma estilização básica.
