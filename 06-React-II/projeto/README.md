@@ -3,8 +3,10 @@
 ## Como executar o código:
 1. Clonar este repositório em seu computador;
 2. Instalar as dependências necessárias com o comando  `npm install`;
-3. Executar o json-server-auth com o comando `npm run json-server` em um primeiro terminal;
+3. Executar o json-server-auth com o comando `npm run backend` em um primeiro terminal;
 4. Executar o projeto com o comando `npm run dev` em um segundo terminal;
+
+Obs.: Para testar o projeto, um dos usuários armazenador é teste@teste.com e sua senha é 12345678.
 
 ## O desafio:
 
